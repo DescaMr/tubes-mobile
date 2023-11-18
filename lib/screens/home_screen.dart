@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:projecttubes/screens/post_screen.dart';
 import 'package:projecttubes/widgets/home_app_bar.dart';
 import 'package:projecttubes/widgets/home_bottom_bar.dart';
 
@@ -42,7 +43,9 @@ class HomePage extends StatelessWidget{
                           itemBuilder: (BuildContext context, int index){
                             return InkWell(
                               onTap: () {
-                                
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context)=>PostScreen(),
+                                ));  
                               },
                               child: Container(
                                 width: 160,
@@ -137,7 +140,11 @@ class HomePage extends StatelessWidget{
                       child: Column(
                         children: [
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context)=>PostScreen(),
+                                ));
+                            },
                             child: Container(
                               height: 200,
                               decoration: BoxDecoration(
