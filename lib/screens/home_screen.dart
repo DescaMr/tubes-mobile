@@ -5,7 +5,7 @@ import 'package:projecttubes/widgets/home_app_bar.dart';
 import 'package:projecttubes/widgets/home_bottom_bar.dart';
 
 class HomePage extends StatelessWidget{
-
+// const HomePage({super.key});
   var category = [
     'Best Places',
     'Most Visited',
@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(90.0),
         child: HomeAppBar(),
